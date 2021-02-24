@@ -196,7 +196,7 @@ func extractCallDestinations(f *elf.File) ([]string, error) {
 	return nil, nil
 }
 
-func telfhash(elfFile *elf.File) (string, error) {
+func Telfhash(elfFile *elf.File) (string, error) {
 	symbols := []string{}
 	dynSymbols, err := elfFile.DynamicSymbols()
 	if err != nil {
